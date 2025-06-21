@@ -1,17 +1,10 @@
-// import { defineConfig } from 'vite';
-// import react from '@vitejs/plugin-react';
-
-// // https://vitejs.dev/config/
-// export default defineConfig({
-//   plugins: [react()],
-//   optimizeDeps: {
-//     exclude: ['lucide-react'],
-//   },
-// });
-
-
 import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
 
 export default defineConfig({
-  base: '/E-Commerce-Dubai/', // ⚠️ Match your repo name exactly
+  plugins: [react()],
+  base: '/E-Commerce-Dubai/',
+  optimizeDeps: {
+    exclude: ['lucide-react'],
+  },
 })
